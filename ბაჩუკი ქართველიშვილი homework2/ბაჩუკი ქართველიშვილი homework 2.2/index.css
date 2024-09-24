@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    display: flex;
+    background-color: rgb(1, 1, 29);
+    justify-content: center;
+    align-items: center; 
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 596px;
+    width: 350px;
+    background-color: #15263F;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+.imageDiv,
+.imageDiv img{
+    height: 302px;
+    width: 302px;
+}
+.imageDiv {
+    position: relative;
+    display: inline-block;
+  }
+  .image {
+    display: block;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00FFF8;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .imageDiv:hover .overlay {
+    opacity: 0.6; /
+  }
+.textsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 28px;
+}
+.text1 h1{
+    color: white;
+    font-size: 22px;
+}
+.text1 h1:hover{
+    color: #00FFF8;
+}
+.text1 p{
+    color: #8BACD9;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.text2{
+display: flex;
+justify-content: space-between;
+margin-bottom: 22px;
+padding-bottom: 20px;
+border-bottom: 1px solid #2e405a;
+}
+.text2Div1{
+display: flex;
+gap:4px;
+}
+.text2Div1 img{
+    height: 18px;
+    width: 11px;
+}
+.text2Div1 h3{
+    color: #00fff8;
+}
+.text2Div2{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+ }
+.text2Div2 img{
+    height: 13.33px;
+    width: 13.33px;
+ }
+.text2Div2 h3{
+    color: #8BACD9;
+    font-size: 16px;
+ }
+ .text3{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+ }
+.text3 img{
+    height: 33px;
+    width: 33px;
+ }
+.text3 h4{
+    display: flex;
+    gap: 6px;
+    color: #8BACD9;
+ }
+.text3 h4 p{
+    color: white;
+ }
+.text3 h4 p:hover{
+    color: #00FFF8;
+ }
+ @media screen and (max-width: 600px) {
+    .mainDiv{
+        height: 543px;
+        width: 327px;
+    }
+    .imageDiv,
+.imageDiv img{
+    height: 278px;
+    width: 278px;
+    margin-top: 12px;
+}
+ }
+
+ 
+
